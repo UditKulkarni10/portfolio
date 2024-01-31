@@ -43,16 +43,16 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="#home">
                 <img src={nav1} alt="" />
               </a>
-              <a href="#">
+              <a href="#skills">
                 <img src={nav2} alt="" />
               </a>
-              <a href="#">
+              <a href="#projects">
                 <img src={nav3} alt="" />
               </a>
-              <a href="#">
+              <a href="#work experience">
                 <img src={nav3} alt="" />
               </a>
             </div>
