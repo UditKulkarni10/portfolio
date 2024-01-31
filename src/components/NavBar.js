@@ -31,9 +31,11 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="logo"/>
+            <img src={logo} alt="logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink === "home" ? 'active navbar-link' : 'navbar-link'} onClick = {() => onUpdateActiveLink('home')}>Home</Nav.Link>
@@ -45,15 +47,6 @@ export const NavBar = () => {
             <div className="social-icon">
               <a href="#home">
                 <img src={nav1} alt="" />
-              </a>
-              <a href="#skills">
-                <img src={nav2} alt="" />
-              </a>
-              <a href="#projects">
-                <img src={nav3} alt="" />
-              </a>
-              <a href="#work experience">
-                <img src={nav3} alt="" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
